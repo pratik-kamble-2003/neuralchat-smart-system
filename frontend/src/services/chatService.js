@@ -16,7 +16,7 @@ export const chatService = {
 
     let response;
     try {
-      response = await fetch(`${API_BASE}/chats/${chatId}/messages`, {
+      response = await fetch(`${import.meta.env.VITE_API_URL}/api/chats/${chatId}/messages`, {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
