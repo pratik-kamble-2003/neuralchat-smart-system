@@ -33,7 +33,7 @@ app.use(helmet({
 
 // CORS
 app.use(cors({
-  origin: "https://neuralchat-smart-system.vercel.app" || 'http://localhost:5173',
+  origin: 'http://localhost:5173' || "https://neuralchat-smart-system.vercel.app",
   credentials: true,
   methods: ['GET', 'POST', 'PUT', 'DELETE', 'PATCH'],
   allowedHeaders: ['Content-Type', 'Authorization'],
